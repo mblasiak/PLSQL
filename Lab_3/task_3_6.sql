@@ -20,3 +20,4 @@ select idmeczu, (case when(gospodarze[1]>goscie[1])then 1 else 0 end)+
 from statystyki ;
 
 select idmeczu, (select sum(un) from unnest(gospodarze) un) as gosp, (select sum(sg) from unnest(goscie) sg)  as goscie from statystyki where (select sum(uq) from unnest(gospodarze) uq)>100;
+
