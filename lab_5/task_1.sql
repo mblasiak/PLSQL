@@ -10,3 +10,4 @@ select sum(sztuk),idpudelka from zawartosc group by idpudelka order by 1;
 select sum(sztuk),idpudelka from zawartosc natural join czekoladki where orzechy is Null group by idpudelka order by 1 desc;
 
 select sum(sztuk),idpudelka from zawartosc natural join czekoladki where czekolada='mleczna' group by idpudelka order by 1 desc;
+
