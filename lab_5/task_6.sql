@@ -4,3 +4,4 @@ select sum(masa_p) as suma_mas from
 join pudelka using(idpudelka)) p ;
 
 select sum(sum_cp) from (select sum(stan*cena) as sum_cp ,idpudelka from pudelka group by idpudelka) q;
+
