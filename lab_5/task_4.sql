@@ -5,3 +5,5 @@ select sum(sztuk),idpudelka from zawartosc natural join czekoladki where orzechy
 select count(idpudelka), idczekoladki from zawartosc full join czekoladki using(idczekoladki) group by idczekoladki order by 1 asc;
 
 select sum(sztuk),idpudelka from artykuly group by idpudelka order by 1 desc;
+
+
